@@ -1,8 +1,10 @@
 var http = require('http');
-var dt = require('./myfirstmodule');  
-var dt = require('./p.py'); 
-var dt = require('./server.js');
-var dt = require('./app.js');
+var dt1 = require('./myfirstmodule');  
+var dt2 = require('./p.py'); 
+var dt3 = require('./server.js');
+var dt4 = require('./app.js');
+var dt5 = require("./nodemailer.js")
+var dt6 = require("./chatapp/app.js")
 var fs = require('fs');
 http.createServer(function (req, res) {
   //Open a file on the server and return its content:
