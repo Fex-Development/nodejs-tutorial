@@ -26,12 +26,27 @@ router.get("/contact",function(req,res){
   res.sendFile(viewPath + "contact.html");
 });
 
+/* want to add own page to this website here is a example go to views folder create a html file like
+<html>
+<body>
+  <p>page not found 404</p>
+</body>
+</html>
+name it .html at the last like example.html
+now come here and typ the details of the html page in easy words example
+
+router.get("/yourpagename",function(req,res){
+  res.sendFile(viewPath + "yourfilename.html");
+});
+
+i think you got it have enjoy dont forget to leave a star on our github page.*/
+
 app.use("/",router);
 
-
-// app.use("*",function(req,res){
-//   res.sendFile(path + "404.html");
-// });
+// 404 page has errors we will fix it later
+/*app.use("*",function(req,res){
+  res.sendFile(viewPath + "404.html");
+});*/
 
 app.listen(3000,function(){
   console.log("Live at Port 3000");
